@@ -5,7 +5,7 @@ interface HeaderProps {
     tabs: { text: string, ext: string }[];
 }
 
-const Header = ({ tabs }: HeaderProps) => {
+export default function Header({ tabs }: HeaderProps) {
     return (
         <div className="header">
             <div>
@@ -15,5 +15,3 @@ const Header = ({ tabs }: HeaderProps) => {
         </div>
     );
 };
-
-export default Header;

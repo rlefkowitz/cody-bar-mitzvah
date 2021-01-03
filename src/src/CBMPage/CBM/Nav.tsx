@@ -5,7 +5,7 @@ interface NavProps {
     tabs: { text: string, ext: string }[];
 }
 
-const Nav = ({ tabs }: NavProps) => {
+export default function Nav({ tabs }: NavProps) {
     return (
         <div className = "nav">
             {tabs.map(({ text, ext }, _) => (
@@ -14,5 +14,3 @@ const Nav = ({ tabs }: NavProps) => {
         </div>
     );
 };
-
-export default Nav;
